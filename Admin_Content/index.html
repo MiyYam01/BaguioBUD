@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge"> 
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0"> 
+	<title>BaguioBUD</title> 
+	<link rel="stylesheet"
+		href="style.css"> 
+	<link rel="stylesheet"
+		href="responsive.css"> 
+
+	<script type="module" src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js"></script>
+	<script type="module" src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+	<script type="module" src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script>
+	<script type="module">
+		import {initializeApp} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"
+		import {getDatabase} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js"
+	</script>
+
+</head> 
+
+<body> 
+	
+
+	<header> 
+
+		<div class="logosec"> 
+			<div class="logo">BaguioBUD</div> 
+			<img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+				class="icn menuicn"
+				id="menuicn"
+				alt="menu-icon"> 
+		</div> 
+
+
+
+	</header> 
+
+	<div class="main-container"> 
+		<div class="navcontainer"> 
+			<nav class="nav"> 
+				<div class="nav-upper-options"> 
+					<div class="nav-option option2"> 
+						<img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
+							class="nav-img"
+							alt="dashboard"> 
+						<h3>  <a href="http://localhost/Admin_Dashboard/">Dashboard</a></h3> 
+					</div> 
+
+					<div class="option1 nav-option"> 
+						<img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
+							class="nav-img"
+							alt="articles"> 
+						<h3> Content</h3> 
+					</div> 
+
+					<div class="nav-option option2"> 
+						<img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/5.png"
+							class="nav-img"
+							alt="report"> 
+						<h3> <a href="http://localhost/Admin_Users"> Users</a></h3> 
+					</div> 
+
+					<div class="option2 nav-option"> 
+						<img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
+							class="nav-img"
+							alt="articles"> 
+						<h3> <a href="http://localhost/Admin_Package"> Package</a></h3> 
+					</div> 
+
+
+					<div class="nav-option logout"> 
+						<img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
+							class="nav-img"
+							alt="logout"> 
+						<h3> <a href="http://youtube.com"> Logout</a></h3> 
+					</div> 
+
+				</div> 
+			</nav> 
+		</div> 
+
+		<div class="main"> 
+
+			<button class="add-user">Add Destination</button>
+                        
+					<div>
+							<table id="crud">
+								<caption>Destinations</caption>
+
+									<thead>
+										<tr>
+											<td style="width: 90%;">Name</td>
+											<td style="text-align: center;">Actions</td>
+										</tr>
+									</thead>
+
+								<tbody id="tbody1">
+
+									<tr>
+										<td></td>
+										<td style="text-align: center;">
+											<button id="edit" class="edit">Edit</button>
+											<button id="delete" class="delete">Delete</button>
+										</td>
+									</tr>
+
+								</tbody>
+
+								
+
+							</table>
+					</div>
+
+        </div> 
+				
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+			<script src="./index.js"></script> 
+
+				</body> 
+				</html>

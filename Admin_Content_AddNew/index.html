@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge"> 
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0"> 
+	<title>BaguioBUD</title> 
+	<link rel="stylesheet"
+		href="style.css"> 
+	<link rel="stylesheet"
+		href="responsive.css"> 
+</head> 
+
+<body> 
+	
+
+	<header> 
+
+		<div class="logosec"> 
+			<div class="logo">BaguioBUD</div> 
+			<img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+				class="icn menuicn"
+				id="menuicn"
+				alt="menu-icon"> 
+		</div> 
+
+
+
+	</header> 
+
+	<div class="main-container"> 
+		<div class="navcontainer"> 
+			<nav class="nav"> 
+				<div class="nav-upper-options"> 
+					<div class="nav-option option2"> 
+						<img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
+							class="nav-img"
+							alt="dashboard"> 
+						<h3>  <a href="http://localhost/Admin_Dashboard/">Dashboard</a></h3> 
+					</div> 
+
+					<div class="option1 nav-option"> 
+						<img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
+							class="nav-img"
+							alt="articles"> 
+						<h3><a href="http://localhost/Admin_Content"> Content</a></h3> 
+					</div> 
+
+					<div class="nav-option option2"> 
+						<img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/5.png"
+							class="nav-img"
+							alt="report"> 
+						<h3> <a href="http://localhost/Admin_Users"> Users</a></h3> 
+					</div> 
+
+					<div class="option2 nav-option"> 
+						<img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
+							class="nav-img"
+							alt="articles"> 
+						<h3> <a href="http://localhost/Admin_Package"> Package</a></h3> 
+					</div> 
+
+
+					<div class="nav-option logout"> 
+						<img src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
+							class="nav-img"
+							alt="logout"> 
+						<h3> <a href="http://youtube.com"> Logout</a></h3> 
+					</div> 
+
+				</div> 
+			</nav> 
+		</div> 
+		<div class="main"> 
+
+
+
+            <div class="report-container"> 
+                <div class="report-header"> 
+                    <h1 class="recent-Articles">Update Destination</h1> 
+                     
+                </div> 
+			
+				<form action="" id="addNewPlace">
+					<div class="alert">Saved Successfully!</div>
+
+					<label>Name of Destination:</label><br>
+					<input type="text" id="placename" name="placename" required><br>
+
+					<label>Description:</label><br>
+					<textarea type="text" id="ddescription" name="description" rows="10" cols="80" placeholder=" Enter text here..." required></textarea><br>
+					
+					<label>Location:</label><br>
+					<input type="text" id="location" name="location" required><br>
+					
+					<label>Google Maps Link:</label><br>
+					<input type="text" id="locationlink" name="locationlink" required><br>
+					
+					<label>Entrance Fee:</label><br>
+					<input type="text" id="efee" name="efee" required><br>
+					
+					<label>Opening Hours:</label><br>
+					<input type="text" id="ohours" name="ohours"><br>	
+
+					<input type="submit" value="Save" id="save"><br>
+
+				</form>
+            </div> 
+
+		
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+			<script src="./index.js"></script> 
+		</body> 
+		</html>
